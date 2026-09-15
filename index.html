@@ -134,7 +134,7 @@
     animation:hero-rise .9s ease .3s forwards;
   }
   .hero .kicker{
-    font-size:.85rem;
+    font-size:1rem;
     color:var(--ink-soft);
     margin-bottom:14px;
     opacity:0;
@@ -157,7 +157,7 @@
   }
   .hero .date{
     margin-top:26px;
-    font-size:.95rem;
+    font-size:1.1rem;
     letter-spacing:.28em;
     color:var(--ink-soft);
     opacity:0;
@@ -361,6 +361,22 @@
     display:grid;
     grid-template-columns:repeat(2, 1fr);
     gap:12px;
+  }
+
+  /* ---------- section photo ---------- */
+  .section-photo{
+    width:min(100%, 220px);
+    aspect-ratio:1;
+    margin:0 auto 34px;
+    border-radius:4px;
+    overflow:hidden;
+    background:var(--card);
+  }
+
+  .section-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
   }
   .g-tile{
     aspect-ratio:1;
@@ -712,9 +728,13 @@
 
   <!-- TIMELINE -->
   <section class="reveal">
+    <div class="section-photo">
+      <img src="img/p11.jpg" alt="" loading="lazy" decoding="async">
+    </div>
     <div class="divider">
       <svg viewBox="0 0 120 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 8 H44 M76 8 H120" stroke="#6b1e23" stroke-width="1"/><path d="M60 2 L66 8 L60 14 L54 8 Z" stroke="#a3895f" stroke-width="1"/></svg>
     </div>
+    
     <div class="section-head">
       <h2>Как пройдёт день</h2>
       <p>Четыре момента, ради которых стоит освободить день в календаре</p>
@@ -733,8 +753,8 @@
 
       <div class="t-item">
         <div class="t-time">15:30</div>
-        <div class="t-title">Фуршет</div>
-        <div class="t-desc">Первый бокал, первые поздравления — и время немного перевести дух перед вечером.</div>
+        <div class="t-title">Знакомство</div>
+        <div class="t-desc">Мы можем немного опоздать, и это время для сбора гостей в ресторане — как раз в это время вы сможете понемногу познакомиться друг с другом.</div>
       </div>
 
       <div class="t-item">
@@ -758,9 +778,13 @@
 
   <!-- DRESS CODE -->
   <section class="reveal">
+        <div class="section-photo">
+      <img src="img/p12.jpg" alt="" loading="lazy" decoding="async">
+    </div>
     <div class="divider">
       <svg viewBox="0 0 120 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 8 H44 M76 8 H120" stroke="#6b1e23" stroke-width="1"/><path d="M60 2 L66 8 L60 14 L54 8 Z" stroke="#a3895f" stroke-width="1"/></svg>
     </div>
+
     <div class="section-head">
       <h2>Дресс-код</h2>
     </div>
@@ -768,11 +792,12 @@
       <p class="dress-note">Рекомендуем пастельные оттенки — мягкие, спокойные тона. Чёрный тоже уместен. От ярких и неоновых цветов просим воздержаться.</p>
       <p class="dress-caption">Пастельная палитра</p>
       <div class="swatches">
-        <div class="swatch" style="background:#e3c9c2"></div>
-        <div class="swatch" style="background:#d8cdb8"></div>
-        <div class="swatch" style="background:#c7cdb8"></div>
-        <div class="swatch" style="background:#e8ddc9"></div>
-        <div class="swatch" style="background:#c9beb0"></div>
+        <div class="swatch" style="background:#e7c5c5"></div>
+        <div class="swatch" style="background:#f1d2bd"></div>
+        <div class="swatch" style="background:#f3e5a7"></div>
+        <div class="swatch" style="background:#d7c9e8"></div>
+        <div class="swatch" style="background:#c4dcf0"></div>
+        <div class="swatch" style="background:#c9d9bb"></div>
         <div class="swatch" style="background:#2b2118"></div>
       </div>
       <p class="dress-caption">Просим избежать</p>
@@ -788,9 +813,13 @@
 
   <!-- IMPORTANT NOTE -->
   <section class="reveal">
+       <div class="section-photo">
+      <img src="img/p13.jpg" alt="" loading="lazy" decoding="async">
+    </div>
     <div class="divider">
       <svg viewBox="0 0 120 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 8 H44 M76 8 H120" stroke="#6b1e23" stroke-width="1"/><path d="M60 2 L66 8 L60 14 L54 8 Z" stroke="#a3895f" stroke-width="1"/></svg>
     </div>
+ 
     <div class="section-head">
       <h2>Важно</h2>
     </div>
@@ -803,9 +832,13 @@
 
   <!-- GALLERY PLACEHOLDER -->
   <section class="reveal">
+    <div class="section-photo">
+      <img src="img/p14.jpg" alt="" loading="lazy" decoding="async">
+    </div>
     <div class="divider">
       <svg viewBox="0 0 120 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 8 H44 M76 8 H120" stroke="#6b1e23" stroke-width="1"/><path d="M60 2 L66 8 L60 14 L54 8 Z" stroke="#a3895f" stroke-width="1"/></svg>
     </div>
+    
     <div class="section-head">
       <h2>Немного нас</h2>
     </div>
@@ -814,7 +847,7 @@
       <div class="g-tile"><img src="img/p3.jpg" alt="" loading="lazy" decoding="async"></div>
       <div class="g-tile"><img src="img/p4.jpg" alt="" loading="lazy" decoding="async"></div>
       <div class="g-tile"><img src="img/p5.jpg" alt="" loading="lazy" decoding="async"></div>
-      <div class="g-tile"><img src="img/p6.jpg" alt="" loading="lazy" decoding="async"></div>
+      <!-- <div class="g-tile"><img src="img/p6.jpg" alt="" loading="lazy" decoding="async"></div> -->
       <div class="g-tile"><img src="img/p7.jpg" alt="" loading="lazy" decoding="async"></div>
       <div class="g-tile"><img src="img/p8.jpg" alt="" loading="lazy" decoding="async"></div>
       <div class="g-tile"><img src="img/p9.jpg" alt="" loading="lazy" decoding="async"></div>
@@ -858,16 +891,8 @@
               <label class="choice"><input type="checkbox" name="drink" value="white"><span>Белое полусладкое вино</span></label>
               <label class="choice"><input type="checkbox" name="drink" value="prosecco"><span>Игристое сухое (просекко)</span></label>
               <label class="choice"><input type="checkbox" name="drink" value="red-sweet"><span>Красное полусладкое вино</span></label>
-              <label class="choice"><input type="checkbox" name="drink" value="red-dry"><span>Красное сухое вино</span></label>
+              <label class="choice"><input type="checkbox" name="drink" value="red-dry"><span>Коньяк</span></label>
               <label class="choice"><input type="checkbox" name="drink" value="none"><span>Без алкоголя</span></label>
-            </div>
-          </div>
-
-          <div class="field">
-            <label>Основное блюдо</label>
-            <div class="choice-group">
-              <label class="choice"><input type="radio" name="dish" value="meat"><span>Мясное</span></label>
-              <label class="choice"><input type="radio" name="dish" value="fish"><span>Рыбное</span></label>
             </div>
           </div>
 
