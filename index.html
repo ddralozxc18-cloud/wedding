@@ -37,10 +37,6 @@
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
   }
-  
-
-
-
 
   h1,h2,h3,.display{
     font-family:'Fraunces', serif;
@@ -48,6 +44,7 @@
     margin:0;
     color:var(--wine-deep);
   }
+
   p{margin:0;}
   a{color:inherit;}
   img{max-width:100%;display:block;}
@@ -72,6 +69,7 @@
     justify-content:center;
     padding:8px 0 0;
   }
+
   .divider svg{width:120px;height:14px;}
 
   /* ---------- reveal ---------- */
@@ -92,10 +90,12 @@
     padding:64px 28px 48px;
     position:relative;
   }
+
   @keyframes hero-rise{
     from{opacity:0; transform:translateY(18px);}
     to{opacity:1; transform:translateY(0);}
   }
+
   .hero-frame{
     width:min(80vw, 300px);
     aspect-ratio:3/4;
@@ -112,6 +112,7 @@
     opacity:0;
     animation:hero-rise .9s ease .1s forwards;
   }
+
   .hero-frame::before{
     content:"";
     position:absolute;
@@ -119,12 +120,14 @@
     border:1px solid rgba(107,30,35,.35);
     border-radius:140px 140px 4px 4px;
   }
+
   .hero-frame img{
     width:100%;
     height:100%;
     object-fit:cover;
     border-radius:138px 138px 2px 2px;
   }
+
   .hero-ornament{
     width:64px;
     height:16px;
@@ -133,6 +136,7 @@
     opacity:0;
     animation:hero-rise .9s ease .3s forwards;
   }
+
   .hero .kicker{
     font-size:1rem;
     color:var(--ink-soft);
@@ -140,6 +144,7 @@
     opacity:0;
     animation:hero-rise .9s ease 0s forwards;
   }
+
   .hero h1{
     font-size:clamp(3rem, 12vw, 4.9rem);
     line-height:1.03;
@@ -147,6 +152,7 @@
     opacity:0;
     animation:hero-rise .9s ease .45s forwards;
   }
+
   .hero h1 .amp{
     display:block;
     font-style:italic;
@@ -155,6 +161,7 @@
     margin:6px 0;
     letter-spacing:.08em;
   }
+
   .hero .date{
     margin-top:26px;
     font-size:1.1rem;
@@ -163,6 +170,7 @@
     opacity:0;
     animation:hero-rise .9s ease .6s forwards;
   }
+
   .hero .place{
     margin-top:8px;
     font-size:.85rem;
@@ -170,11 +178,13 @@
     opacity:0;
     animation:hero-rise .9s ease .7s forwards;
   }
+
   @media (prefers-reduced-motion: reduce){
     .hero-frame, .hero-ornament, .hero .kicker, .hero h1, .hero .date, .hero .place{
       opacity:1; animation:none;
     }
   }
+
   .scroll-cue{
     position:absolute;
     bottom:28px;
@@ -185,6 +195,7 @@
     font-size:.72rem;
     color:var(--ink-soft);
   }
+
   .scroll-cue span{
     width:1px;height:34px;
     background:linear-gradient(var(--wine), transparent);
@@ -196,9 +207,11 @@
     text-align:center;
     margin-bottom:48px;
   }
+
   .section-head h2{
     font-size:clamp(1.7rem, 5vw, 2.2rem);
   }
+
   .section-head p{
     margin-top:10px;
     color:var(--ink-soft);
@@ -213,6 +226,7 @@
     color:var(--ink);
     text-align:center;
   }
+
   .intro p + p{margin-top:20px;}
 
   /* ---------- timeline ---------- */
@@ -220,6 +234,7 @@
     position:relative;
     padding-left:30px;
   }
+
   .timeline::before{
     content:"";
     position:absolute;
@@ -227,11 +242,14 @@
     width:1px;
     background:linear-gradient(var(--wine), rgba(107,30,35,.15));
   }
+
   .t-item{
     position:relative;
     padding-bottom:64px;
   }
+
   .t-item:last-child{padding-bottom:0;}
+
   .t-item::before{
     content:"";
     position:absolute;
@@ -241,6 +259,7 @@
     background:var(--paper);
     border:1.5px solid var(--wine);
   }
+
   .t-time{
     font-family:'Fraunces', serif;
     font-weight:400;
@@ -249,6 +268,7 @@
     margin-bottom:8px;
     letter-spacing:.02em;
   }
+
   .t-title{
     font-size:1.05rem;
     font-weight:500;
@@ -256,11 +276,13 @@
     padding-bottom:14px;
     border-bottom:1px solid rgba(43,33,24,.1);
   }
+
   .t-desc{
     font-size:.92rem;
     color:var(--ink-soft);
     line-height:1.7;
   }
+
   .t-addr{
     margin-top:16px;
     font-size:.88rem;
@@ -268,6 +290,7 @@
     border-left:1px solid rgba(107,30,35,.25);
     padding-left:14px;
   }
+
   .t-addr a{
     display:inline-block;
     margin-top:6px;
@@ -283,6 +306,7 @@
     border-radius:2px;
     padding:48px 28px;
   }
+
   .dress-note{
     text-align:center;
     font-size:.98rem;
@@ -290,6 +314,7 @@
     color:var(--ink);
     margin-bottom:36px;
   }
+
   .dress-caption{
     text-align:center;
     font-size:.72rem;
@@ -298,6 +323,7 @@
     color:var(--ink-soft);
     margin-bottom:16px;
   }
+
   .swatches{
     display:flex;
     justify-content:center;
@@ -305,23 +331,27 @@
     flex-wrap:wrap;
     margin-bottom:40px;
   }
+
   .swatch{
     width:36px;height:36px;
     border-radius:50%;
     border:1px solid rgba(43,33,24,.12);
   }
+
   .avoid-row{
     display:flex;
     justify-content:center;
     gap:16px;
     flex-wrap:wrap;
   }
+
   .avoid{
     position:relative;
     width:32px;height:32px;
     border-radius:50%;
     border:1px solid rgba(43,33,24,.15);
   }
+
   .avoid::before, .avoid::after{
     content:"";
     position:absolute;
@@ -329,8 +359,10 @@
     width:150%; height:1.5px;
     background:var(--wine-deep);
   }
+
   .avoid::before{transform:translate(-50%,-50%) rotate(45deg);}
   .avoid::after{transform:translate(-50%,-50%) rotate(-45deg);}
+
   .avoid-label{
     text-align:center;
     font-size:.8rem;
@@ -343,11 +375,13 @@
     text-align:center;
     padding:0 8px;
   }
+
   .note-block p{
     font-size:1rem;
     line-height:1.85;
     color:var(--ink);
   }
+
   .note-block .signoff{
     margin-top:22px;
     font-family:'Fraunces', serif;
@@ -378,12 +412,14 @@
     height:100%;
     object-fit:cover;
   }
+
   .g-tile{
     aspect-ratio:1;
     background:var(--card);
     border-radius:4px;
     overflow:hidden;
   }
+
   .g-tile img{
     width:100%;
     height:100%;
@@ -396,13 +432,16 @@
     border-radius:4px;
     padding:36px 24px;
   }
+
   .field{margin-bottom:26px;}
+
   .field label{
     display:block;
     font-size:.85rem;
     color:var(--ink-soft);
     margin-bottom:10px;
   }
+
   .field input[type="text"],
   .field input[type="tel"],
   .field textarea{
@@ -415,12 +454,16 @@
     font-size:.95rem;
     color:var(--ink);
   }
+
   .field textarea{resize:vertical;min-height:70px;}
+
   .field input:focus, .field textarea:focus, .choice input:focus-visible + span{
     outline:2px solid var(--wine);
     outline-offset:1px;
   }
+
   .choice-group{display:flex;flex-direction:column;gap:10px;}
+
   .choice{
     display:flex;
     align-items:center;
@@ -428,9 +471,11 @@
     font-size:.93rem;
     cursor:pointer;
   }
+
   .choice input{accent-color:var(--wine);width:17px;height:17px;flex-shrink:0;}
 
   .card-choice-group{display:flex; flex-direction:column; gap:12px;}
+
   .card-choice{
     position:relative;
     display:flex;
@@ -443,11 +488,13 @@
     cursor:pointer;
     transition:border-color .25s ease, background .25s ease;
   }
+
   .card-choice input{
     position:absolute;
     opacity:0;
     width:0; height:0;
   }
+
   .card-choice .card-icon{
     width:22px; height:22px;
     border-radius:50%;
@@ -458,26 +505,33 @@
     justify-content:center;
     transition:border-color .25s ease, background .25s ease;
   }
+
   .card-choice .card-icon svg{
     width:12px; height:12px;
     opacity:0;
     color:var(--paper);
     transition:opacity .2s ease;
   }
+
   .card-choice .card-text{font-size:.95rem;}
+
   .card-choice.is-selected{
     border-color:var(--wine);
     background:rgba(107,30,35,.05);
   }
+
   .card-choice.is-selected .card-icon{
     background:var(--wine);
     border-color:var(--wine);
   }
+
   .card-choice.is-selected .card-icon svg{opacity:1;}
+
   .card-choice input:focus-visible ~ .card-icon{
     outline:2px solid var(--wine);
     outline-offset:2px;
   }
+
   .submit-btn{
     width:100%;
     background:var(--wine);
@@ -491,7 +545,9 @@
     cursor:pointer;
     transition:background .25s ease;
   }
+
   .submit-btn:hover{background:var(--wine-deep);}
+
   .form-confirm{
     display:none;
     text-align:center;
@@ -500,6 +556,7 @@
     font-size:.95rem;
     line-height:1.6;
   }
+
   .form-confirm.is-visible{display:block;}
   .form-fields.is-hidden{display:none;}
 
@@ -510,12 +567,14 @@
     background:var(--wine-deep);
     color:var(--paper);
   }
+
   footer .thanks{
     font-size:.85rem;
     letter-spacing:.1em;
     color:rgba(250,243,232,.7);
     margin-bottom:18px;
   }
+
   footer .display{
     font-family:'Fraunces', serif;
     font-style:italic;
@@ -523,12 +582,14 @@
     font-size:2rem;
     color:var(--paper);
   }
+
   footer .f-date{
     margin-top:16px;
     font-size:.82rem;
     letter-spacing:.28em;
     color:rgba(250,243,232,.65);
   }
+
   footer .foot-divider{
     margin:0 auto 22px;
     width:64px;
@@ -538,6 +599,7 @@
 
   /* ---------- lightbox ---------- */
   .g-tile img, .hero-frame img{cursor:zoom-in;}
+
   .lightbox{
     position:fixed;
     inset:0;
@@ -551,10 +613,12 @@
     transition:opacity .3s ease;
     z-index:200;
   }
+
   .lightbox.is-open{
     opacity:1;
     visibility:visible;
   }
+
   .lightbox img{
     max-width:100%;
     max-height:100%;
@@ -564,10 +628,12 @@
     opacity:0;
     transition:transform .4s cubic-bezier(.22,.85,.32,1.1), opacity .3s ease;
   }
+
   .lightbox.is-open img{
     transform:scale(1) translateY(0);
     opacity:1;
   }
+
   .lightbox-close{
     position:absolute;
     top:18px;
@@ -595,6 +661,7 @@
     display:flex;
     align-items:stretch;
   }
+
   .music-tab{
     width:42px;
     height:58px;
@@ -610,14 +677,18 @@
     flex-shrink:0;
     padding:0;
   }
+
   .music-tab svg{
     animation:music-note-bob 2.2s ease-in-out infinite;
   }
+
   .music-widget.is-open .music-tab svg{animation:none;}
+
   @keyframes music-note-bob{
     0%, 100%{transform:translateY(0);}
     50%{transform:translateY(-3px);}
   }
+
   .music-panel{
     display:flex;
     align-items:center;
@@ -632,11 +703,13 @@
     white-space:nowrap;
     transition:width .35s ease, opacity .3s ease, padding .35s ease;
   }
+
   .music-widget.is-open .music-panel{
     width:188px;
     padding:0 16px 0 12px;
     opacity:1;
   }
+
   .music-mute{
     width:30px;
     height:30px;
@@ -651,9 +724,11 @@
     flex-shrink:0;
     padding:0;
   }
+
   .music-mute .icon-off{display:none;}
   .music-mute.is-muted .icon-on{display:none;}
   .music-mute.is-muted .icon-off{display:flex;}
+
   .music-panel input[type="range"]{
     flex:1;
     accent-color:var(--wine);
@@ -674,7 +749,9 @@
       -webkit-overflow-scrolling:touch;
       scrollbar-width:none;
     }
+
     .gallery::-webkit-scrollbar{display:none;}
+
     .g-tile{
       flex:0 0 var(--tile-w);
       scroll-snap-align:center;
@@ -682,6 +759,7 @@
       transform:scale(.84);
       transition:transform .35s ease;
     }
+
     .g-tile.is-active{
       transform:scale(1);
     }
@@ -753,8 +831,12 @@
 
       <div class="t-item">
         <div class="t-time">15:30</div>
-        <div class="t-title">Знакомство</div>
-        <div class="t-desc">Мы можем немного опоздать, и это время для сбора гостей в ресторане — как раз в это время вы сможете понемногу познакомиться друг с другом.</div>
+        <div class="t-title">Фуршет</div>
+        <div class="t-desc">Сбор гостей в ресторане. В это время можно спокойно встретиться, пообщаться и перекусить перед началом банкета.</div>
+        <div class="t-addr">
+          Ресторан «Атаманская Усадьба»<br>г. Ростов-на-Дону, Левобережная ул., 8В
+          <br><a href="https://yandex.ru/maps/?text=Левобережная улица 8В Ростов-на-Дону Атаманская Усадьба" target="_blank" rel="noopener">Открыть на карте</a>
+        </div>
       </div>
 
       <div class="t-item">
@@ -865,7 +947,11 @@
       <p>Это поможет нам всё продумать заранее</p>
     </div>
     <div class="form-card">
-      <form id="rsvp-form">
+      <form id="rsvp-form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Сюда вставьте реальный access_key, полученный в Web3Forms -->
+        <input type="hidden" name="access_key" value="ВАШ_ACCESS_KEY">
+        <!-- Тема письма, которое будет отправлено на почту -->
+        <input type="hidden" name="_subject" value="Новая анкета гостя — свадьба Даниила и Ульяны">
         <div class="form-fields" id="form-fields">
           <div class="field">
             <label for="f-name">Ваше имя</label>
@@ -972,12 +1058,36 @@
     revealEls.forEach(function(el){ el.classList.add('is-visible'); });
   }
 
-  // RSVP form stub — no real submission, just a friendly confirmation
+  // Отправка анкеты гостя через Web3Forms
   var form = document.getElementById('rsvp-form');
   form.addEventListener('submit', function(e){
     e.preventDefault();
-    document.getElementById('form-fields').classList.add('is-hidden');
-    document.getElementById('form-confirm').classList.add('is-visible');
+
+    // Собираем все поля формы, включая несколько чекбоксов с name="drink"
+    var formData = new FormData(form);
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    })
+    .then(function(response){
+      return response.json();
+    })
+    .then(function(data){
+      if (data.success === true) {
+        // После успешной отправки скрываем поля и показываем подтверждение
+        document.getElementById('form-fields').classList.add('is-hidden');
+        document.getElementById('form-confirm').classList.add('is-visible');
+      } else {
+        console.error('Ошибка отправки анкеты:', data);
+        alert('Не удалось отправить анкету. Попробуйте ещё раз.');
+      }
+    })
+    .catch(function(error){
+      // Обрабатываем сетевые ошибки
+      console.error('Сетевая ошибка при отправке анкеты:', error);
+      alert('Не удалось отправить анкету. Попробуйте ещё раз.');
+    });
   });
 
   // RSVP card-style choices — highlight the selected card
@@ -1025,6 +1135,7 @@
       lightbox.classList.add('is-open');
       document.body.style.overflow = 'hidden';
     }
+
     function closeLightbox(){
       lightbox.classList.remove('is-open');
       document.body.style.overflow = '';
@@ -1033,10 +1144,12 @@
     photos.forEach(function(img){
       img.addEventListener('click', function(){ openLightbox(img); });
     });
+
     closeBtn.addEventListener('click', closeLightbox);
     lightbox.addEventListener('click', function(e){
       if (e.target === lightbox) closeLightbox();
     });
+
     document.addEventListener('keydown', function(e){
       if (e.key === 'Escape') closeLightbox();
     });
@@ -1053,6 +1166,7 @@
 
     audio.volume = 0.5;
     audio.loop = true;
+
     // Safety net in case the loop attribute gets ignored in some
     // playback path — manually restart from the beginning on end.
     audio.addEventListener('ended', function(){
@@ -1071,11 +1185,13 @@
             document.removeEventListener('click', startOnFirstInteraction);
             document.removeEventListener('touchstart', startOnFirstInteraction);
           };
+
           document.addEventListener('click', startOnFirstInteraction, { once: true });
           document.addEventListener('touchstart', startOnFirstInteraction, { once: true });
         });
       }
     }
+
     attemptAutoplay();
 
     tab.addEventListener('click', function(){
