@@ -948,8 +948,8 @@
     </div>
     <div class="form-card">
       <form id="rsvp-form" action="https://api.web3forms.com/submit" method="POST">
-        <!-- Сюда вставьте реальный access_key, полученный в Web3Forms -->
-        <input type="hidden" name="access_key" value="ВАШ_ACCESS_KEY">
+        <!-- Access Key от Web3Forms (публичный ключ, привязан к почте получателя) -->
+        <input type="hidden" name="access_key" value="0cb75cef-9325-4af2-aa98-826ba8c92bc2">
         <!-- Тема письма, которое будет отправлено на почту -->
         <input type="hidden" name="_subject" value="Новая анкета гостя — свадьба Даниила и Ульяны">
         <div class="form-fields" id="form-fields">
@@ -974,11 +974,11 @@
           <div class="field">
             <label>Предпочтения в напитках</label>
             <div class="choice-group">
-              <label class="choice"><input type="checkbox" name="drink" value="white"><span>Белое полусладкое вино</span></label>
-              <label class="choice"><input type="checkbox" name="drink" value="prosecco"><span>Игристое сухое (просекко)</span></label>
-              <label class="choice"><input type="checkbox" name="drink" value="red-sweet"><span>Красное полусладкое вино</span></label>
-              <label class="choice"><input type="checkbox" name="drink" value="red-dry"><span>Коньяк</span></label>
-              <label class="choice"><input type="checkbox" name="drink" value="none"><span>Без алкоголя</span></label>
+              <label class="choice"><input type="checkbox" name="drink" value="Белое полусладкое вино"><span>Белое полусладкое вино</span></label>
+              <label class="choice"><input type="checkbox" name="drink" value="Игристое сухое (просекко)"><span>Игристое сухое (просекко)</span></label>
+              <label class="choice"><input type="checkbox" name="drink" value="Красное полусладкое вино"><span>Красное полусладкое вино</span></label>
+              <label class="choice"><input type="checkbox" name="drink" value="Коньяк"><span>Коньяк</span></label>
+              <label class="choice"><input type="checkbox" name="drink" value="Без алкоголя"><span>Без алкоголя</span></label>
             </div>
           </div>
 
